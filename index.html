@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria interativa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>Galeria de imagens</h1>
+        <p>Explore nossas imagens por categoria</p>
+    </header>
+
+    <!-- Filtros -->
+     <nav class="filtros">
+        <button
+        class="filtro ativo"
+        data-filtro="todas"
+        >
+            Todas!
+        </button>
+        <button
+        class="filtro"
+        data-filtro="asia"
+        >
+            Ásia
+        </button>
+        <button
+        class="filtro"
+        data-filtro="europa"
+        >
+            Europa
+        </button>
+        <button
+        class="filtro"
+        data-filtro="america"
+        >
+            América
+        </button>
+     </nav>
+
+     <p id="totalImagens" class="total"></p>
+
+     <!-- Galeria -->
+
+     <main class="galeria">
+        <img 
+            src="./img/foto1.jpg" 
+            alt="Singapura" 
+            class="miniatura destaque" 
+            data-categoria="asia" 
+            data-titulo="Singapura, cidade independente no Sudeste Asiático"
+            data-descricao="Com cerca de 5,9 milhões de habitantes, Singapura é uma próspera cidade-estado sendo um dos maiores centros financeiros globais, com altíssimo IDH (um dos melhores do mundo) e economia baseada em inovação, tecnologia, porto estratégico e capital humano."
+        >
+        <img
+            src="./img/foto2.jpg" 
+            alt="Xangai" 
+            class="miniatura horizontal" 
+            data-categoria="asia"
+            data-titulo="Xangai, China"
+            data-descricao="Xangai conta com cerca de 24,9 milhões de habitantes, é a maior cidade da China e um dos principais centros financeiros, comerciais e de inovação do mundo. Localizada na costa central do país, na foz do Rio Yangtzé, a metrópole é famosa por seu impressionante contraste urbano: de um lado do Rio Huangpu destaca-se o distrito de Pudong, com seus arranha-céus futuristas como a Torre de Xangai; do outro, o calçadão do Bund preserva edifícios históricos de arquitetura colonial europeia. Combinando uma rica herança cultural com um ritmo de desenvolvimento acelerado."
+        >
+        <img 
+            src="./img/foto3.jpg"  
+            alt="Calgary" 
+            class="miniatura" 
+            data-categoria="america"
+            data-titulo="Calgary, Canadá"
+            data-descricao="Calgary é atualmente a terceira maior cidade do Canadá e a maior da provincída de Alberta tem uma população estimada em cerca de 1,56 milhão de habitantes na cidade propriamente dita e 1,84 milhão de habitantes na região metropolitana. Localizada em uma área de transição entre as extensas pradarias canadenses e as imponentes Montanhas Rochosas, a metrópole combina um centro urbano moderno e repleto de arranha-céus com uma excelente qualidade de vida, oferecendo rápido acesso a parques nacionais icônicos como Banff e Jasper."
+        >
+        <img 
+            src="./img/foto4.jpg" 
+            alt="Joinville" 
+            class="miniatura vertical" 
+            data-categoria="america"
+            data-titulo="Joinville, Brasil"
+            data-descricao="Joinville é a maior cidade do Estado de Santa Catarina com estimativas que giram em torno de 673 mil habitantes. Com uma forte herança cultural de imigrantes alemães, suíços e noruegueses, o município combina o dinamismo de sua forte indústria metal-mecânica e tecnológica com uma charmosa arquitetura histórica, ruas arborizadas e eventos de grande porte, como o prestigiado Festival de Dança de Joinville."
+        >
+        <img
+             src="./img/foto5.jpg"
+             alt="Cologne" 
+             class="miniatura" 
+             data-categoria="europa"
+             data-titulo="Cologne, Alemanha"
+             data-descricao="Cologne conta com cerca de 1,1 milhões de habitantes, . Com mais de 2.000 anos de história que remontam ao Império Romano, a metrópole é mundialmente famosa por sua imponente Catedral de Colônia (Kölner Dom), uma obra-prima da arquitetura gótica e o monumento mais visitado do país. Além de seu rico patrimônio histórico, a cidade é amplamente reconhecida por sua atmosfera vibrante, liberal e acolhedora, celebrada internacionalmente pelo seu tradicional Carnaval, pela exclusividade de sua cerveja local (a Kölsch) e por ser o berço da famosa fragrância 'Água de Colônia'."
+        >
+        <img 
+            src="./img/foto6.jpg" 
+            alt="Tóquio" 
+            class="miniatura horizontal" 
+            data-categoria="asia"
+            data-titulo="Tóquio, Japão"
+            data-descricao="Tóquio é a capital do japão e uma das maiores cidades do mundo, com cerca de 14 milhões de habitantes e uma aglomeração urbana de 33 a 37 milhões de habitantes. Conhecida por sua eficiência impecável, segurança e modernidade avassaladora, a cidade harmoniza arranha-céus futuristas e letreiros em neon brilhantes com templos históricos antigos e jardins tradicionais serenos. Como o coração político, econômico e cultural do país."
+        >
+        <img 
+            src="./img/foto7.jpg" 
+            alt="Atlanta" 
+            class="miniatura" 
+            data-categoria="america"
+            data-titulo="Atlanta, Estados Unidos"
+            data-descricao=" Atlanta contém aproximadamente 549 mil habitantes, a vibrante capital do estado da Geórgia, nos Estados Unidos, é um dos principais centros econômicos, culturais e históricos do sul do país. Conhecida como o berço do movimento pelos direitos civis e terra natal de Martin Luther King Jr., a metrópole combina o charme da hospitalidade sulista com o dinamismo de uma grande potência comercial, Atlanta se destaca por sua rica cena musical e gastronômica, extensas áreas verdes urbanas e por possuir o aeroporto mais movimentado do mundo.."
+        >
+        <img 
+            src="./img/foto8.jpg" 
+            alt="Londres" 
+            class="miniatura" 
+            data-categoria="europa"
+            data-titulo="Londres, Reino Unido"
+            data-descricao="Londres conta com cerca de 9 milhões de habitantes, a vibrante capital do Reino Unido, é uma metrópole global que combina séculos de história com modernidade à beira do rio Tâmisa. Reconhecida como um dos principais centros financeiros, culturais e artísticos do mundo, a cidade impressiona pela sua diversidade cultural e por marcos icônicos como o Big Ben, a London Eye e o Palácio de Buckingham. Londres também se destaca por sua atmosfera cosmopolita,  museus de classe mundial gratuitos, parques reais exuberantes e uma cena gastronômica e teatral."
+        >
+        <img 
+            src="./img/foto9.jpg" 
+            alt="Praga" 
+            class="miniatura horizontal" 
+            data-categoria="europa"
+            data-titulo="Praga, Republica Tcheca"
+            data-descricao="Com cerca de 1,4 milhões de habitantes, Praga, a capital da República Tcheca, é mundialmente conhecida como a 'Cidade das Cem Cúpulas' devido à sua deslumbrante e preservada arquitetura histórica que mescla os estilos gótico, barroco e renascentista. Cortada pelo icônico Rio Moldava, a cidade encanta os visitantes com cartões-postais como a imponente Ponte Carlos, o imenso complexo do Castelo de Praga e a famosa Praça da Cidade Velha, onde fica o famoso Relógio Astronômico medieval."
+        >
+
+     </main>
+
+     
+     <!-- Modal -->
+    <div
+      id="modal"
+      class="modal"
+     >
+      
+        <button id="fechar" class="fechar">&times;</button>
+        <button id="anterior" class="navegacao anterior">&#10094;</button>
+        <div class="modal-conteudo">
+            <img src="" alt="Imagem Ampliada" id="imagemModal">
+           
+        </div>    
+        <section class="informacoes" id="informacoes">
+                <div class="legenda">
+                    <span id="contador"></span>
+                    <span id="nomeImagem"></span>
+                </div>
+                <div class="informacoes-conteudo">
+                    <span id="titulo"></span>
+                    <span id="descricao"></span>
+                </div>
+        </section>
+        <button id="proximo" class="navegacao proximo"> &#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
