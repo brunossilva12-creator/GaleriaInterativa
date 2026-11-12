@@ -25,7 +25,7 @@ Uma galeria web interativa de cidades ao redor do mundo, permitindo filtrar dest
 ### 🚀 Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/GaleriaInterativa
    ```
 2. Abra a pasta do projeto e execute o arquivo `index.html` diretamente no seu navegador.
 
@@ -52,7 +52,7 @@ An interactive web gallery of cities around the world, allowing users to filter 
 ### 🚀 How to run locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/GaleriaInterativa
    ```
 2. Open the project folder and launch the `index.html` file in your browser.
 
